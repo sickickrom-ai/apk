@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/constants/app_constants.dart';
 import 'presentation/screens/splash_screen.dart';
@@ -31,14 +29,8 @@ void main() {
     DeviceOrientation.landscapeRight,
   ]);
 
-  // Initialize InAppWebView platform
-  // This is required for flutter_inappwebview v6.x
-  InAppWebViewPlatform.instance;
-
   runApp(
-    const ProviderScope(
-      child: RedeCanaisBrowser(),
-    ),
+    const RedeCanaisBrowser(),
   );
 }
 
