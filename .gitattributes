@@ -1,0 +1,7 @@
+*.dart linguist-language=Dart
+*.gradle linguist-language=Gradle
+*.kt linguist-language=Kotlin
+*.xml linguist-language=XML
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+*.md linguist-documentation
